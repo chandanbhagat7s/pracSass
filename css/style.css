@@ -33,45 +33,40 @@ body {
   background-image: linear-gradient(to right bottom, rgba(128, 214, 113, 0.797), rgba(40, 180, 133, 0.82)), url("../img/hero.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  /* border: 1vh solid red; */
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
+  .header__logo-box {
+    position: absolute;
+    /* border: 1vh solid red; */
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 700;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1.75rem;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -93,53 +88,47 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 2rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem; }
-
-.btn--animated {
-  animation: moveUp;
-  animation-duration: 2s; }
-
-.btn--white {
-  background-color: white;
-  color: #28b485; }
-
-.btn:hover {
-  transform: translateY(-2vh);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-0.3vh);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
-
-/* using sudo element : it is treated as child of elemnet */
-.btn::after {
-  content: "";
-  display: inline-block;
-  /* background-color: red; */
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s; }
-
-.btn--white::after {
-  background-color: white; }
-
-.btn:hover::after {
-  transform: scale(2);
-  opacity: 0; }
+.btn {
+  /* using sudo element : it is treated as child of elemnet */ }
+  .btn:link,
+  .btn btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem; }
+  .btn--animated {
+    animation: moveUp;
+    animation-duration: 2s; }
+  .btn:hover {
+    transform: translateY(-2vh);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn:active {
+    transform: translateY(-0.3vh);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s; }
+  .btn--white::after {
+    background-color: #fff; }
+  .btn:hover::after {
+    transform: scale(2);
+    opacity: 0; }
 
 @keyframes moveUp {
   0% {
