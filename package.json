@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/chandanbhagat7s/pracSass#readme",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "prettier": "^3.0.2"
   }
 }
